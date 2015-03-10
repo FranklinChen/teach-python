@@ -8,4 +8,4 @@ def add_fuzz_factor(i):
     0
     """
 
-    return i
+    return i+1
