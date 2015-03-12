@@ -14,11 +14,4 @@ def get_multiples_of_numbers(i, j, scale):
     [6, 8, 10]
     """
 
-    if i <= j:
-        # Mutate a result list.
-        result = []
-        for n in range(i, j+1):
-            result.append(n * scale)
-        return result
-    else:
-        return "the range is invalid"
+    return 'this is wrong, of course'
