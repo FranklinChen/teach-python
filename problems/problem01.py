@@ -17,7 +17,7 @@ def print_multiples_of_numbers(i, j, scale):
     """
 
     if i <= j:
-	for n in range(i, j+1):
-	    print n * scale
+        for n in range(i, j+1):
+            print n * scale
     else:
-	print "the range is invalid"
+        print "the range is invalid"
