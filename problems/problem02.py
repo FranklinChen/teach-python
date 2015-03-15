@@ -21,4 +21,4 @@ def get_multiples_of_numbers(i, j, scale):
             result.append(n * scale)
         return result
     else:
-        return "the range is invalid"
+        return 'the range is invalid'
