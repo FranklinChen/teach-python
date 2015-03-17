@@ -6,8 +6,7 @@ keys:
   - root: a root of type A
   - kids: a list of Tree[A] (called the children)
 
-Note that a tree is defined recursively, with a base case and a
-recursive case.
+Note that a tree is defined recursively.
 """
 
 """
@@ -88,10 +87,6 @@ big_tree = {
 
 def tree_size(tree):
     """Return the number of leaves of a tree.
-
-    Note that a tree is defined recursively, with a base case and a
-    recursive case, so code for a tree will also naturally be
-    recursive.
 
     Hint: use the sum function.
 
