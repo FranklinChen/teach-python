@@ -14,7 +14,7 @@ def multiply(x, y):
 
 # Run tests with
 #
-# pytest problem07.py
+# py.test problem07.py
 def test_plus():
     f = user_choice('+')
     assert f(2, 3) == 5
