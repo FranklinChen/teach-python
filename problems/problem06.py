@@ -85,6 +85,21 @@ big_tree = {
 }
 
 
+# To run all the tests here:
+#
+# py.test problem06.py
+def test_trivial():
+    assert tree_size(trivial_tree) == 1
+
+
+def test_small():
+    assert tree_size(small_tree) == 4
+
+
+def test_big():
+    assert tree_size(big_tree) == 11
+
+
 def tree_size(tree):
     """Return the number of leaves of a tree.
 
