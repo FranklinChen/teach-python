@@ -2,39 +2,26 @@
 """
 
 
-def formal_greet(name):
+def formal_greeter(name):
     return 'hello ' + name
 
 
-def informal_greet(name):
+def informal_greeter(name):
     return 'hi ' + name
 
 
-def test_formal():
-    f = hire_greeter('stiff')
-    assert f('Joseph') == 'hello Joseph'
-
-
-def test_informal():
-    assert hire_greeter('loose')('Mary') == 'hi Mary'
-
-
-def test_huh():
-    f = hire_greeter('huh?')
-    assert f('Bob') == 'Guten Morgen Bob'
+def german_greeter(name):
+    return 'Guten Morgen ' + name
 
 
 def hire_greeter(which):
-    """If which is 'stiff', return a formal greeter, else if 'loose', an informal greeter, else a German greeter.
+    """If which is 'stiff', return a formal greeter, else if 'loose',
+    an informal greeter, else a German greeter.
     """
 
     if which == 'stiff':
-        return formal_greet
+        return formal_greeter
     elif which == 'loose':
-        return informal_greet
+        return informal_greeter
     else:
-        return german_greet
-
-
-def german_greet(name):
-    return 'Guten Morgen ' + name
+        return german_greeter
