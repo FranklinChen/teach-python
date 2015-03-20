@@ -12,20 +12,9 @@ def boil_worker(egg):
     return 'boiled ' + egg
 
 
-def test_scramble():
-    f = hire_egg_worker('scramble')
-    assert f('brown egg') == 'scrambled brown egg'
-    assert f('white egg') == 'scrambled white egg'
-
-
-def test_boil():
-    assert hire_egg_worker('boil')('funny egg') == 'boiled funny egg'
-
-
-def test_huh():
-    f = hire_egg_worker('huh?')
-    assert f('brown egg') == 'help me with brown egg!'
-    assert f('green egg') == 'help me with green egg!'
+def confused_worker(egg):
+    """Confused about the egg."""
+    return 'help me with ' + egg + '!'
 
 
 def hire_egg_worker(which):
@@ -38,8 +27,3 @@ def hire_egg_worker(which):
         return boil_worker
     else:
         return confused_worker
-
-
-def confused_worker(egg):
-    """Confused about the egg."""
-    return 'help me with ' + egg + '!'
